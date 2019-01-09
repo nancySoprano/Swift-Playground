@@ -1,7 +1,11 @@
 import UIKit
 
 func BMI (height : Float, weight : Float) -> String {
+<<<<<<< HEAD
     let BMI = weight / pow(height,2)
+=======
+    let BMI = weight / (height * height)
+>>>>>>> 58dfffcebaf75ed990e93f2a9045e1925b6ca31a
     
     if BMI > 25 {
         return "You are overweight. Your BMI is \(BMI)"
