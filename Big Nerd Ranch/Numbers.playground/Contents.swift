@@ -10,6 +10,20 @@ print("The maximum value for unsigned Int is \(UInt.max).")
 
 //„Swift style is to prefer Int for all integer uses”
 
+let numberOfPages: Int = 10 // Declares the type explicitly
+let numberOfChapters = 3 // Also of type Int, but interferred by the complier
+
+let numberOfPeople: UInt = 40
+let volumeAdjustment: Int32 = -1000
+
+print(10 + 20)
+print(10 + 2 * 5) //20, because 2*5 is evaluated first
+
+//parantheses are always evaluated first
+
+
+
+
 
 
 
