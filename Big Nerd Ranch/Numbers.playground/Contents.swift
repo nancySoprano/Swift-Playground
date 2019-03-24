@@ -21,6 +21,30 @@ print(10 + 2 * 5) //20, because 2*5 is evaluated first
 
 //parantheses are always evaluated first
 
+print((10 + 2) * 5) // 60, because (10 + 2) is now evaluated first
+
+//Integer division
+
+print(-11 / 3) // Prints -3
+
+//integer division always rounds toward 0
+
+//remainder of a division operation. reminainder operator % modulo
+
+//REMAINDERS
+
+print(11 / 3)
+print(11 % 3) // prints 2
+print(-11 % 3) // prints -2
+
+var x = 10
+x += 1//incrementing
+
+let y: Int8 = 120
+let z = y &+ 10
+
+
+
 
 
 
