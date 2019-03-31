@@ -43,7 +43,23 @@ x += 1//incrementing
 let y: Int8 = 120
 let z = y &+ 10
 
+let a: Int16 = 20
+let b: Int8 = 2
 
+let d1 = 2.6
+let d2: Double = 2.6
+let f1: Float = 453.1
+
+print(10.0 + 11.4)
+print(11.0 / 3.0)
+print(12.4.truncatingRemainder(dividingBy: 5.0))
+
+if d1 == d2 {
+    print("d1 and d2 are the same!")
+}
+
+var modulo = 120 % 2
+print(modulo)
 
 
 
