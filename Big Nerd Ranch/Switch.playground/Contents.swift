@@ -1,22 +1,18 @@
 import Cocoa
 
 var statusCode: Int = 403
-var errorString: String
+var errorString: String = "The request failed with the error: "
 switch statusCode {
-case 400:
-    errorString = "Bad request"
-    
-case 401:
-    errorString = "Unauthorized"
-    
-case 403:
-    errorString = "Forbidden"
-
-case 404:
-    errorString = "Not found"
-    
+case 100, 101:
+    errorString += "Informational, 1xx."
+case 204:
+    errorString += "Successful but no content, 204."
+case 300...307: //range matching
+    errorString += "Redirection, 3xx."
+case 400...417:
+    errorString += "Client error, 4xx."
 default:
-    errorString = "None"
+    errorString = "Unknown. Please review the request and try again."
 }
 
 print(errorString)
