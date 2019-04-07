@@ -23,4 +23,18 @@ let error = (number : statusCode, details : errorString)
 error.number // naming tuple elements
 error.details
 
-//print(errorString)
+let firstErrorCode = 404 //pattern matching in tuples
+let secondErrorCode = 200
+let errorCodes = (firstErrorCode, secondErrorCode)
+
+switch errorCodes {
+case (404, 404):
+    print("No items found")
+case (404, _):
+    print("First item not found")
+case (_, 404):
+    print("second item not found")
+default:
+    print("all items found")
+}
+
