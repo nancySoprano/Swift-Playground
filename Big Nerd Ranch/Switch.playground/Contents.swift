@@ -19,4 +19,8 @@ default:
     errorString += "Unexpected error encountered."
 }
 
-print(errorString)
+let error = (statusCode, errorString)
+error.0 // accessing elements stored inside of a tuple by their index
+error.1
+
+//print(errorString)
